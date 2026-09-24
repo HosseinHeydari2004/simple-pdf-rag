@@ -59,7 +59,7 @@ This is the easiest way to run DocuMind; you don't need Python installed locally
 
 ```bash
 # 1. Clone the project and step into it
-git clone <your-repo-url> documind && cd documind
+git clone https://github.com/HosseinHeydari2004/simple-pdf-rag.git
 
 # 2. Set up your API key
 cp .env.example .env
