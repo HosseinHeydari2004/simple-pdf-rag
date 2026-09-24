@@ -1,0 +1,34 @@
+# Core
+pydantic>=2.7,<3
+python-dotenv>=1.0
+
+# Document loading
+langchain-core>=0.3
+langchain-community>=0.3
+langchain-text-splitters>=0.3
+pypdf>=4.0
+docx2txt>=0.8
+
+
+# LLM providers
+google-genai>=0.3
+openai>=1.40
+langchain>=0.3
+
+# RAG: embedding + vector store
+langchain-huggingface>=0.1
+langchain-chroma>=0.2
+chromadb>=0.5
+sentence-transformers>=3.0
+
+# API
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+
+# UI
+streamlit>=1.38
+
+# Tests
+pytest>=8.0
+pytest-mock>=3.14

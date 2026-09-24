@@ -1,0 +1,12 @@
+services:
+  documind:
+    build: .
+    image: documind-rag:latest
+    container_name: documind-rag
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./vector_database:/app/vector_database
+    restart: unless-stopped

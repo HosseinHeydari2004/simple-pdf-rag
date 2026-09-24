@@ -1,4 +1,13 @@
 .idea/
 test/
 example/
-*.pytest_cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+vector_database/
+*.rar

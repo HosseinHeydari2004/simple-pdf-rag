@@ -1,0 +1,43 @@
+# --- Version control ---
+.git
+.gitignore
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+
+# --- Project data that shouldn't ship in the image ---
+vector_database/
+example/
+test/
+tests/
+*.log
+
+# --- Docker / CI itself ---
+Dockerfile
+.dockerignore
+docker-compose.yml
+.github/
+
+# --- Docs / misc ---
+*.md

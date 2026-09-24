@@ -8,15 +8,16 @@ from langchain_community.document_loaders import (
 )
 from langchain_core.documents import Document
 
-
-class PipelineLoader:
-    def __init__(self):
-        self.__loaders: dict = {
+_loader = {
             ".pdf": PyPDFLoader,
             ".docx": Docx2txtLoader,
             ".txt": TextLoader,
             ".md": UnstructuredMarkdownLoader
         }
+
+class PipelineLoader:
+    def __init__(self):
+        self.__loaders: dict = _loader
 
     def load(self, file_path: str | Path) -> list[Document]:
         file = Path(file_path)
